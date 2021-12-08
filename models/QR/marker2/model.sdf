@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+
+    <model name="maker_tile_2">
+        <static>true</static>
+        <link name="link">
+            <pose>0 0 0.5 0 0 0</pose>
+            <collision name="collision">
+                <geometry>
+                    <box>
+                        <size>0.2 0.001 0.2</size>
+                    </box>
+                </geometry>
+            </collision>
+
+            <visual name="visual">
+                <cast_shadows>false</cast_shadows>
+                <geometry>
+                    <box>
+                        <size>0.2 0.001 0.2</size>
+                    </box>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>model://marker2/materials/scripts</uri>
+                        <uri>model://marker2/materials/textures</uri>
+                        <name>vrc/markerMaterial2</name>
+                    </script>
+                </material>
+            </visual>
+        </link>
+    </model>
+
+</sdf>

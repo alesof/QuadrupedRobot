@@ -1,0 +1,18 @@
+material vrc/groundfloor
+{
+	technique
+	{
+		pass
+		{
+
+
+			texture_unit
+			{
+				texture cp1.jpg
+				filtering anistropic
+				max_anisotropy 16
+				scale 0.1 0.1
+			}
+		}
+	}
+}

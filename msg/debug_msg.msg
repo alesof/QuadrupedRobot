@@ -1,0 +1,47 @@
+float64 error_pos_x
+float64 error_pos_y
+float64 error_pos_z
+float64 error_pos_r
+float64 error_pos_p
+float64 error_pos_yaw
+float64 error_vel_x
+float64 error_vel_y
+float64 error_vel_z
+float64 error_vel_r
+float64 error_vel_p
+float64 error_vel_yaw
+float64 ee_bl_err_pos_x
+float64 ee_bl_err_pos_y
+float64 ee_bl_err_pos_z
+float64 ee_br_err_pos_x
+float64 ee_br_err_pos_y
+float64 ee_br_err_pos_z
+float64 ee_fl_err_pos_x
+float64 ee_fl_err_pos_y
+float64 ee_fl_err_pos_z
+float64 ee_fr_err_pos_x
+float64 ee_fr_err_pos_y
+float64 ee_fr_err_pos_z
+float64 ee_bl_err_vel_x
+float64 ee_bl_err_vel_y
+float64 ee_bl_err_vel_z
+float64 ee_br_err_vel_x
+float64 ee_br_err_vel_y
+float64 ee_br_err_vel_z
+float64 ee_fl_err_vel_x
+float64 ee_fl_err_vel_y
+float64 ee_fl_err_vel_z
+float64 ee_fr_err_vel_x
+float64 ee_fr_err_vel_y
+float64 ee_fr_err_vel_z
+float64 fgr_star1
+float64 fgr_star2
+float64 fgr_star3
+float64 fgr_star4
+float64 fgr_star5
+float64 fgr_star6
+float64 stance
+
+
+
+

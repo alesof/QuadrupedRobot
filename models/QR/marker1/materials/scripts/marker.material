@@ -1,0 +1,16 @@
+material vrc/markerMaterial
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture marker1.png
+                filtering anistropic
+                max_anisotropy 16
+                scale 1 1
+            }
+        }
+    }
+}

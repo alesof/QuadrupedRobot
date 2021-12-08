@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <arg name="paused" default="$(arg paused)"/>
+    <arg name="model" default="$(arg model)" />
+    <arg name="rvizconfig" default="$(arg rvizconfig)" />
+    
+
+    <param name="robot_description" command="$(find xacro)/xacro $(find project)/dogbot_description/urdf/dogbot.xacro"/>
+    
+    <!-- push robot_description to factory and spawn robot in gazebo -->
+  <node if="$(arg paused)" name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
+        args="-x 4 -y 4 -z 0.43 -Y 2.44 -urdf 
+        -J back_left_roll_joint 0.0004875394147498824 
+        -J back_left_pitch_joint -0.884249947977489 
+        -J back_left_knee_joint -1.6039026405138666
+        -J back_right_roll_joint 0.0006243098169198547         
+        -J back_right_pitch_joint 0.8861978063639038
+        -J back_right_knee_joint 1.6032646991719783
+        -J front_left_roll_joint 0
+        -J front_left_pitch_joint -0.8848124990461947
+        -J front_left_knee_joint -1.6039627256817717
+        -J front_right_roll_joint -0.0005127385581351618
+        -J front_right_pitch_joint 0.886353788084274
+        -J front_right_knee_joint 1.60361055049274
+
+        -model dogbot  -param robot_description" respawn="false" output="screen" />
+
+
+  <node unless="$(arg paused)" name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
+        args="-z 0.65 -unpause -urdf -model dogbot -param robot_description" respawn="false" output="screen" />
+    
+    <!-- Start Rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="false" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" ns="/dogbot" />
+
+
+
+
+</launch>

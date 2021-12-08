@@ -1,0 +1,4 @@
+int32 in
+---
+float64 goal_x
+float64 goal_y

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <arg name= "world" default="$(find project)/world/home.world"/>
+    <arg name="gui" default="true"/> 
+    <arg name="debug" default="false"/> 
+    <arg name="paused" default="true"/> 
+    <arg name="use_sim_time" default="true"/> 
+    <arg name="headless" default="false"/> 
+
+    <env name="GAZEBO_MODEL_PATH" value="$(find project)/models/walls:$(find project)/models/robot:$(find project)/models/QR:$(optenv GAZEBO_MODEL_PATH)" />
+
+
+    <!-- Start World -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg world)"/>
+        <arg name="gui" value="$(arg gui)"/>
+        <arg name="debug" value="$(arg debug)"/>
+        <arg name="paused" value="$(arg paused)"/>
+        <arg name="use_sim_time" value="$(arg use_sim_time)" />
+        <arg name="headless" value="$headless" />
+    </include>
+
+</launch>

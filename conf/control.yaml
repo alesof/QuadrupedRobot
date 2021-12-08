@@ -1,0 +1,39 @@
+dogbot:
+
+  # Pubblico lo stato dei giunti
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 1000
+
+  # Settings for ros_control hardware interface
+  hardware_interface:
+    joints:
+        - back_left_knee_joint
+        - back_left_pitch_joint
+        - back_left_roll_joint
+        - back_right_knee_joint
+        - back_right_pitch_joint
+        - back_right_roll_joint
+        - front_left_knee_joint
+        - front_left_pitch_joint
+        - front_left_roll_joint
+        - front_right_knee_joint
+        - front_right_pitch_joint
+        - front_right_roll_joint
+    sim_control_mode: 0 # 0: position, 1: velocity
+
+  joint_effort_controllers:
+    type: effort_controllers/JointGroupEffortController
+    joints:
+        - front_right_roll_joint
+        - front_right_pitch_joint
+        - front_right_knee_joint
+        - front_left_roll_joint
+        - front_left_pitch_joint
+        - front_left_knee_joint
+        - back_right_roll_joint
+        - back_right_pitch_joint
+        - back_right_knee_joint
+        - back_left_roll_joint
+        - back_left_pitch_joint
+        - back_left_knee_joint
