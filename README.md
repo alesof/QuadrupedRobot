@@ -57,9 +57,9 @@ To run the simulation follow this steps in order:
 ------------
 
 
-###Additional Settings
-- *Change Room Coordinates :* if you're using a different simulation scene and need to change the rooms' coordinates, values are defined in the service_server.cpp file. Changing these values also may result in exploring the given scene in a different room order. 
-- *Change Marker ID : * to change the ID the robot has to find modify the variable _marker_desiderato defined in the globalplanner.cpp file. Follows a list of all the encrypted ID's.
+### Additional Settings
+- **Change Room Coordinates :** if you're using a different simulation scene and need to change the rooms' coordinates, values are defined in the service_server.cpp file. Changing these values also may result in exploring the given scene in a different room order. 
+- **Change Marker ID :** to change the ID the robot has to find modify the variable _marker_desiderato defined in the globalplanner.cpp file. Follows a list of all the encrypted ID's.
 
 | Room  | ID | 
 | :---: | :---: |
@@ -69,7 +69,7 @@ To run the simulation follow this steps in order:
 
 ------------
 
-###Qr Code Generation
+### Qr Code Generation
 To use the QR Code generator library in the package first you need to build it with the following instructions.
 
 ```
@@ -85,4 +85,4 @@ Then generate a QR Code as a png file with
 cd project/cpp-qr-to-png-master/build/src
 sudo ./main
 ```
-You'll then be prompted to enter a string to encrypt as QR and a name for the file. *Please note* that the file name has to end with the ".svg" extension.
+You'll then be prompted to enter a string to encrypt as QR and a name for the file. **Please note** that the file name has to end with the ".svg" extension.
