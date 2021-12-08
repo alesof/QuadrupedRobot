@@ -1,6 +1,13 @@
 # Quadruped Robot Control & Navigation
 
-[TOC]
+Table of Contents
+=================
+
+  * [Technical Project](#Technical-Project)
+  * [Install](#Install)
+  * [Run](#Run)
+    * [Additional Settings](#Additional-Settings)
+    * [QR Code Generator](#QR-Code-Generator)
 
 ## Technical Project
 This package allows to simulate the control of a quadruped robot and the locomotion in an unkown environment. The last stable version is tested on Ubuntu 20.04 OS, using ROS Noetic and Gazebo 11.5.1.
