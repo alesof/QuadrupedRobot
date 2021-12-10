@@ -1,4 +1,5 @@
 # Quadruped Robot Control & Navigation
+This repo contains the package needed for the RL and FSR modules final exam. Media folder contains a pdf describing the project and a video of a complete simulation. The video is modified to run at 4x speed.
 
 Table of Contents
 =================
@@ -92,4 +93,4 @@ Then generate a QR Code as a png file with
 cd project/cpp-qr-to-png-master/build/src
 sudo ./main
 ```
-You'll then be prompted to enter a string to encrypt as QR and a name for the file. **Please note** that the file name has to end with the ".svg" extension.
+You'll then be prompted to enter a string to encrypt as QR, and a name for the file. **Note** that the file name has to end with the ".svg" extension and there's no input validation loop.
