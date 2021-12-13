@@ -58,7 +58,7 @@ To run the simulation follow this steps in order:
 
 1. Run the simulation using `roslaunch project project.launch`
 
-2. Start the controller using `rosrun project professore_node`
+2. Start the controller using `rosrun project planner_node`
 
 3. Press play in gazebo to start the simulation
 
