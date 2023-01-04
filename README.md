@@ -1,6 +1,8 @@
 # Quadruped Robot Control & Navigation
 This repo contains the package needed for the RL and FSR modules final exam. Media folder contains a pdf describing the project and a video of a complete simulation. The video is modified to run at 4x speed.
 
+![Quadruped Project](Media/DOGBOT_COVER.png)
+
 Table of Contents
 =================
 
